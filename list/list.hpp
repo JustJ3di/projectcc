@@ -91,11 +91,7 @@ public:
 // The dereference operator returns a reference to the data
     reference operator*() const {
         return current_->get_data(); 
-        // NOTE: Since iterator is defined inside list<T>::Node, 
-        // we assume the Node's data_ field is accessible here, 
-        // but it's cleaner to use a public getter if one existed 
-        // that returned a T&. Let's assume data_ is accessible 
-        // for now as a common C++ internal pattern.
+
     }
 
     // The arrow operator (used like: iter->method())
