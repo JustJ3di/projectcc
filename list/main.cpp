@@ -25,9 +25,9 @@ int main() {
 
     std::cout << "--- Test Lista di Stringhe ---\n";
     list<std::string> stringList;
-    stringList.push_front("C++");
-    stringList.push_front("Coding");
-    stringList.push_front("Inizio");
+    stringList.push_front("shit");
+    stringList.push_front("is a");
+    stringList.push_front("Grifis");
 
     std::cout << "Elementi nella lista: ";
     for (auto it = stringList.begin(); it != stringList.end(); ++it) {
