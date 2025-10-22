@@ -35,7 +35,7 @@ int main() {
     }
     std::cout << "\n";
 
-    // 3. La memoria viene rilasciata quando intList e stringList escono dallo scope (grazie al distruttore)
+
     
     return 0;
 }
