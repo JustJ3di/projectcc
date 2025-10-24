@@ -293,7 +293,7 @@ JsonValue Json::parse_simple(std::ifstream& file, char start_char) {
         return is_float ? JsonValue(std::stod(token)) : JsonValue(std::stoi(token));
     }
     
-    // --- String Parsing ---
+    //  String Parsing 
     if (chunk == '"') {
         token.clear(); // Clear the starting '"'
         while (file.get(chunk) && chunk != '"') {
@@ -307,7 +307,7 @@ JsonValue Json::parse_simple(std::ifstream& file, char start_char) {
         return token;
     }
 
-    // --- Boolean/Null Parsing (t, f, n) ---
+    // Boolean/Null Parsing 
     if (chunk == 't' || chunk == 'f' || chunk == 'n') {
         while (file.get(chunk) && std::isalpha(chunk)) {
             token += chunk;
