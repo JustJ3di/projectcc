@@ -1,0 +1,16 @@
+{
+    "name": "Acme Corp",
+    "id": 12345,
+    "active": true,
+    "value": 99.99,
+    "metadata": null,
+    "projects": [
+        "Alpha",
+        "Beta",
+        "Gamma"
+    ],
+    "config": {
+        "timeout": 500,
+        "enabled": false
+    }
+}
